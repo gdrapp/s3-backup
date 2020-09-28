@@ -1,5 +1,5 @@
 # s3-backup.py 
-Backup local files to S3. Files are bundled into a tar.gz file and uploaded to S3.
+Backup local files to Amazon S3. Files are bundled into a tar.gz file before they are uploaded.
 
 ## Installation
 ```
@@ -38,4 +38,4 @@ AWS region containing the S3 bucket where backup file will be copied.
 Name of the S3 bucket where backup file will be copied
 
 ### Option: `s3.storage_class` (required)
-AWS S3 storage class to use when storing the backup file in S3.
+Amazon S3 storage class to use when storing the backup file in S3.

@@ -57,6 +57,8 @@ class S3Bucket:
         key = file.lstrip("/")
         extra_args = {}
         extra_args["StorageClass"] = self.storage_class
+        extra_args["ServerSideEncryption"] = "AES256"
+
         if metadata is not None:
             extra_args["Metadata"] = metadata
 
@@ -82,6 +84,8 @@ class S3Bucket:
         key = filename.lstrip("/")
         extra_args = {}
         extra_args["StorageClass"] = self.storage_class
+        extra_args["ServerSideEncryption"] = "AES256"
+
         if metadata is not None:
             extra_args["Metadata"] = metadata
 
