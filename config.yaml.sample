@@ -1,0 +1,9 @@
+tarfile_name_prefix: "server_"
+sources:
+    - /etc
+exclusions:
+    - '.*\.log$'
+s3:
+    bucket_region: us-west-1
+    bucket_name: my-backups
+    storage_class: STANDARD
